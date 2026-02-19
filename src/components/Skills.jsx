@@ -8,7 +8,16 @@ const skills = [
   { title: "Languages", subtitles: ["JavaScript", "Python", "C/C++", "Java"] },
   {
     title: "Libraries",
-    subtitles: ["React.js", "Mongoose.js", "ReactQuery", "Redux",  "ReactHookForm", "MaterialUI", "Framer-Motion", "GSAP"],
+    subtitles: [
+      "React.js",
+      "Mongoose.js",
+      "ReactQuery",
+      "Redux",
+      "ReactHookForm",
+      "MaterialUI",
+      "Framer-Motion",
+      "GSAP",
+    ],
   },
   {
     title: "Frameworks",
@@ -16,7 +25,7 @@ const skills = [
   },
   {
     title: "Databases",
-    subtitles: ["MongoDB", "MySQL"],
+    subtitles: ["MongoDB", "MySQL", "Bootstrap"],
   },
 ];
 
@@ -50,7 +59,7 @@ const Skills = () => {
         .from(".popup", { scale: 0, stagger: 0.02 })
         .from(".listslide", { x: 30, opacity: 0, stagger: 0.03 }, "<50%");
     },
-    { scope: el }
+    { scope: el },
   );
 
   return (
