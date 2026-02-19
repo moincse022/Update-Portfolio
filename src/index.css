@@ -1,0 +1,270 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  /* color: lime */
+  :root[data-theme="lime"] {
+    --primary: theme(colors.lime.600);
+    --middle: theme(colors.lime.500);
+    --nav-hover: theme(colors.lime.200);
+  }
+  :root[data-theme="lime"][data-mode="dark"] {
+    --primary: theme(colors.lime.400);
+    --middle: theme(colors.lime.500);
+    --nav-hover: theme(colors.lime.800);
+  }
+
+  /* color: blue */
+  :root[data-theme="blue"] {
+    --primary: theme(colors.blue.600);
+    --middle: theme(colors.blue.500);
+    --nav-hover: theme(colors.blue.200);
+  }
+  :root[data-theme="blue"][data-mode="dark"] {
+    --primary: theme(colors.blue.400);
+    --middle: theme(colors.blue.500);
+    --nav-hover: theme(colors.blue.800);
+  }
+
+  /* color: red */
+  :root[data-theme="red"] {
+    --primary: theme(colors.red.600);
+    --middle: theme(colors.red.500);
+    --nav-hover: theme(colors.red.200);
+  }
+  :root[data-theme="red"][data-mode="dark"] {
+    --primary: theme(colors.red.400);
+    --middle: theme(colors.red.500);
+    --nav-hover: theme(colors.red.800);
+  }
+
+  /* color: orange */
+  :root[data-theme="orange"] {
+    --primary: theme(colors.orange.600);
+    --middle: theme(colors.orange.500);
+    --nav-hover: theme(colors.orange.200);
+  }
+  :root[data-theme="orange"][data-mode="dark"] {
+    --primary: theme(colors.orange.400);
+    --middle: theme(colors.orange.500);
+    --nav-hover: theme(colors.orange.800);
+  }
+
+  /* color: amber */
+  :root[data-theme="amber"] {
+    --primary: theme(colors.amber.600);
+    --middle: theme(colors.amber.500);
+    --nav-hover: theme(colors.amber.200);
+  }
+  :root[data-theme="amber"][data-mode="dark"] {
+    --primary: theme(colors.amber.400);
+    --middle: theme(colors.amber.500);
+    --nav-hover: theme(colors.amber.800);
+  }
+
+  /* color: yellow */
+  :root[data-theme="yellow"] {
+    --primary: theme(colors.yellow.600);
+    --middle: theme(colors.yellow.500);
+    --nav-hover: theme(colors.yellow.200);
+  }
+  :root[data-theme="yellow"][data-mode="dark"] {
+    --primary: theme(colors.yellow.400);
+    --middle: theme(colors.yellow.500);
+    --nav-hover: theme(colors.yellow.800);
+  }
+
+  /* color: green */
+  :root[data-theme="green"] {
+    --primary: theme(colors.green.600);
+    --middle: theme(colors.green.500);
+    --nav-hover: theme(colors.green.200);
+  }
+  :root[data-theme="green"][data-mode="dark"] {
+    --primary: theme(colors.green.400);
+    --middle: theme(colors.green.500);
+    --nav-hover: theme(colors.green.800);
+  }
+
+  /* color: emerald */
+  :root[data-theme="emerald"] {
+    --primary: theme(colors.emerald.600);
+    --middle: theme(colors.emerald.500);
+    --nav-hover: theme(colors.emerald.200);
+  }
+  :root[data-theme="emerald"][data-mode="dark"] {
+    --primary: theme(colors.emerald.400);
+    --middle: theme(colors.emerald.500);
+    --nav-hover: theme(colors.emerald.800);
+  }
+
+  /* color: teal */
+  :root[data-theme="teal"] {
+    --primary: theme(colors.teal.600);
+    --middle: theme(colors.teal.500);
+    --nav-hover: theme(colors.teal.200);
+  }
+  :root[data-theme="teal"][data-mode="dark"] {
+    --primary: theme(colors.teal.400);
+    --middle: theme(colors.teal.500);
+    --nav-hover: theme(colors.teal.800);
+  }
+
+  /* color: cyan */
+  :root[data-theme="cyan"] {
+    --primary: theme(colors.cyan.600);
+    --middle: theme(colors.cyan.500);
+    --nav-hover: theme(colors.cyan.200);
+  }
+  :root[data-theme="cyan"][data-mode="dark"] {
+    --primary: theme(colors.cyan.400);
+    --middle: theme(colors.cyan.500);
+    --nav-hover: theme(colors.cyan.800);
+  }
+
+  /* color: sky */
+  :root[data-theme="sky"] {
+    --primary: theme(colors.sky.600);
+    --middle: theme(colors.sky.500);
+    --nav-hover: theme(colors.sky.200);
+  }
+  :root[data-theme="sky"][data-mode="dark"] {
+    --primary: theme(colors.sky.400);
+    --middle: theme(colors.sky.500);
+    --nav-hover: theme(colors.sky.800);
+  }
+
+  /* color: indigo */
+  :root[data-theme="indigo"] {
+    --primary: theme(colors.indigo.600);
+    --middle: theme(colors.indigo.500);
+    --nav-hover: theme(colors.indigo.200);
+  }
+  :root[data-theme="indigo"][data-mode="dark"] {
+    --primary: theme(colors.indigo.400);
+    --middle: theme(colors.indigo.500);
+    --nav-hover: theme(colors.indigo.800);
+  }
+
+  /* color: violet */
+  :root[data-theme="violet"] {
+    --primary: theme(colors.violet.600);
+    --middle: theme(colors.violet.500);
+    --nav-hover: theme(colors.violet.200);
+  }
+  :root[data-theme="violet"][data-mode="dark"] {
+    --primary: theme(colors.violet.400);
+    --middle: theme(colors.violet.500);
+    --nav-hover: theme(colors.violet.800);
+  }
+
+  /* color: purple */
+  :root[data-theme="purple"] {
+    --primary: theme(colors.purple.600);
+    --middle: theme(colors.purple.500);
+    --nav-hover: theme(colors.purple.200);
+  }
+  :root[data-theme="purple"][data-mode="dark"] {
+    --primary: theme(colors.purple.400);
+    --middle: theme(colors.purple.500);
+    --nav-hover: theme(colors.purple.800);
+  }
+
+  /* color: fuchsia */
+  :root[data-theme="fuchsia"] {
+    --primary: theme(colors.fuchsia.600);
+    --middle: theme(colors.fuchsia.500);
+    --nav-hover: theme(colors.fuchsia.200);
+  }
+  :root[data-theme="fuchsia"][data-mode="dark"] {
+    --primary: theme(colors.fuchsia.400);
+    --middle: theme(colors.fuchsia.500);
+    --nav-hover: theme(colors.fuchsia.800);
+  }
+
+  /* color: pink */
+  :root[data-theme="pink"] {
+    --primary: theme(colors.pink.600);
+    --middle: theme(colors.pink.500);
+    --nav-hover: theme(colors.pink.200);
+  }
+  :root[data-theme="pink"][data-mode="dark"] {
+    --primary: theme(colors.pink.400);
+    --middle: theme(colors.pink.500);
+    --nav-hover: theme(colors.pink.800);
+  }
+
+  /* color: rose */
+  :root[data-theme="rose"] {
+    --primary: theme(colors.rose.600);
+    --middle: theme(colors.rose.500);
+    --nav-hover: theme(colors.rose.200);
+  }
+  :root[data-theme="rose"][data-mode="dark"] {
+    --primary: theme(colors.rose.400);
+    --middle: theme(colors.rose.500);
+    --nav-hover: theme(colors.rose.800);
+  }
+}
+
+section,
+nav,
+footer {
+  -webkit-transition:
+    background-color 250ms ease-in-out,
+    color 500ms ease-in-out;
+  transition:
+    background-color 250ms ease-in-out,
+    color 500ms ease-in-out;
+}
+
+body {
+  background-color: var(--middle);
+  font-family: "Roboto", sans-serif;
+  overflow-x: hidden;
+}
+/* Image wrapper */
+.image-wrapper {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  position: relative;
+}
+
+@media (min-width: 768px) {
+  .image-wrapper {
+    width: 340px;
+    height: 340px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .image-wrapper {
+    width: 420px;
+    height: 420px;
+  }
+}
+
+/* Profile Image */
+.profile-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 6px solid #ffffff;
+  box-shadow: 0 25px 60px rgba(0, 0, 0, 0.25);
+}
+
+/* Glowing ring */
+.glow-ring {
+  position: absolute;
+  inset: -14px;
+  border-radius: 50%;
+  background: linear-gradient(120deg, #6366f1, #22d3ee, #a855f7);
+  filter: blur(30px);
+  opacity: 0.75;
+  z-index: 0;
+}
