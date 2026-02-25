@@ -132,7 +132,7 @@ const Banner = () => {
 
           <div className="home-left-to-right flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
             <a
-              href="https://drive.google.com/uc?export=download&id=1XmhZDjkT3xf4yWwtaVPVImYwKB1I8d1d"
+              href="https://docs.google.com/document/d/1CGSie4Hc-njAwNqopJKUqSXOYGaU5Z5d1eYj0Mu8ZPs/export?format=pdf"
               className="px-8 py-3 bg-primary text-white rounded flex items-center gap-2"
             >
               <Download className="download-button-icon" />

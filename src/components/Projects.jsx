@@ -5,11 +5,12 @@ import useResource from "../hooks/useResource";
 import { useGSAP } from "@gsap/react";
 import Slider from "./Slider";
 
-import img11 from "../assets/images/11.png";
-import img12 from "../assets/images/12.png";
-import img13 from "../assets/images/13.png";
-import img14 from "../assets/images/14.png";
-import img15 from "../assets/images/15.png";
+import img1 from "../assets/images/1.png";
+import img2 from "../assets/images/2.png";
+import img3 from "../assets/images/3.png";
+import img4 from "../assets/images/4.png";
+import img5 from "../assets/images/5.png";
+import img6 from "../assets/images/6.png";
 
 import img21 from "../assets/images/21.png";
 import img22 from "../assets/images/22.png";
@@ -22,43 +23,40 @@ import img32 from "../assets/images/32.png";
 import img33 from "../assets/images/33.png";
 import img34 from "../assets/images/34.png";
 import img35 from "../assets/images/35.png";
-
-import img41 from "../assets/images/41.png";
-import img42 from "../assets/images/42.png";
-import img43 from "../assets/images/43.png";
-import img44 from "../assets/images/44.png";
-import img45 from "../assets/images/45.png";
-import img46 from "../assets/images/46.png";
-import img47 from "../assets/images/47.png";
-import img48 from "../assets/images/48.png";
-import img49 from "../assets/images/49.png";
+import img11 from "../assets/images/11.png";
+import img12 from "../assets/images/12.png";
+import img13 from "../assets/images/13.png";
+import img14 from "../assets/images/14.png";
+import img15 from "../assets/images/15.png";
 
 import { Eye, Github } from "lucide-react";
 
 const projectsList = [
   {
-    name: "Recipe Persona",
+    name: "Resu Magnet",
     description:
-      "RecipePersona is an intelligent recipe recommender that personalizes recipe suggestions based on user profiles and preferences using deep learning.",
+      "ResuMagnet is a resume builder app, where users can create their resume by filling up a form and also can download it as PDF format.",
     technologies: {
-      frontend: "React.js, Shadcn-UI, React Router, Firebase Authentication, React Hook Form, React Query, Framer-Motion",
+      frontend:
+        "React.js, Shadcn-UI, React Router, Firebase Authentication, React Hook Form, React Query, Framer-Motion",
       backend: "Express.js, MongoDB, Mongoose.js, Tensorflow.js",
     },
     links: {
-      live: "https://recipe-persona.web.app/",
+      live: "https://resu-magnet-frontend.vercel.app/",
       source: {
-        frontend: "https://github.com/ShantoNoor/RecipePersona-Frontend",
-        backend: "https://github.com/ShantoNoor/RecipePersona-Backend",
+        frontend: "https://github.com/teamkingsman/resuMagnet-frontend",
+        backend: "https://github.com/teamkingsman/resuMagnet-backend/",
       },
     },
-    imgList: [img41, img42, img43, img49, img44, img45, img46, img47, img48],
+    imgList: [img1, img2, img3, img4, img5, img6],
   },
   {
     name: "Parcel Bee",
     description:
       "ParcelBee is a parcel delivery app. Where there is three types of users(Admin, DeliveryMan, User) for managing parcels differently based on different users role.",
     technologies: {
-      frontend: "React.js, MUI, React Router, Firebase Authentication, React Hook Form, React Query",
+      frontend:
+        "React.js, MUI, React Router, Firebase Authentication, React Hook Form, React Query",
       backend: "Express.js, MongoDB, Mongoose.js",
     },
     links: {
@@ -177,7 +175,7 @@ const Projects = () => {
         ease: "power3.in",
       });
     },
-    { scope: el }
+    { scope: el },
   );
 
   return (

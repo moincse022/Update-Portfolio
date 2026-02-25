@@ -5,7 +5,7 @@ import useResource from "../hooks/useResource";
 import { useGSAP } from "@gsap/react";
 
 const skills = [
-  { title: "Languages", subtitles: ["JavaScript", "Python", "C/C++", "Java"] },
+  { title: "Languages", subtitles: ["JavaScript", "Python", "C/C++"] },
   {
     title: "Libraries",
     subtitles: [
@@ -13,6 +13,7 @@ const skills = [
       "Mongoose.js",
       "ReactQuery",
       "Redux",
+      "Zustand",
       "ReactHookForm",
       "MaterialUI",
       "Framer-Motion",
@@ -25,7 +26,7 @@ const skills = [
   },
   {
     title: "Databases",
-    subtitles: ["MongoDB", "MySQL", "Bootstrap"],
+    subtitles: ["MongoDB", "MySQL", "sqlite"],
   },
 ];
 

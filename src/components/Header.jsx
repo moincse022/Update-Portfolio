@@ -61,7 +61,7 @@ export default function Header() {
         ease: "linear",
       });
     },
-    { scope: el }
+    { scope: el },
   );
 
   return (
