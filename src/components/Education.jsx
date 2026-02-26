@@ -11,17 +11,17 @@ const educations = [
     name: "B.Sc in Computer Science and Engineering",
     year: "2024",
     institute:
-      "Bangabandhu Sheikh Mujibur Rahman Science and Technology University, Gopalganj, Bangladesh",
+      "Gopalgonj Science and Technology University, Gopalganj, Bangladesh",
   },
   {
     name: "H.S.C",
-    year: "2018",
-    institute: "Ahsanullah College, Khulna, Bangladesh",
+    year: "2017",
+    institute: "Khulna Public College, Khulna, Bangladesh",
   },
   {
     name: "S.S.C",
-    year: "2016",
-    institute: "Saint Joseph's High School, Khulna, Bangladesh",
+    year: "2015",
+    institute: "Charkulia High School,Mollahat,Bagerhat, Bangladesh",
   },
   // {
   //   name: "J.S.C",
@@ -68,7 +68,7 @@ const Education = () => {
         .from(".slide-from-left", { x: 35, opacity: 0 })
         .from(".slide-from-right", { x: -35, opacity: 0, stagger: 0.2 }, "<");
     },
-    { scope: el }
+    { scope: el },
   );
 
   return (

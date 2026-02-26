@@ -23,11 +23,11 @@ const Footer = () => {
         .from(
           ".slide-from-right",
           { x: -35, opacity: 0, stagger: 0.2 },
-          "<50%"
+          "<50%",
         );
 
       gsap.to(".text", {
-        text: "Md. Noor E Musa",
+        text: "Md. Moin Uddin",
         repeat: -1,
         ease: "bounce.inOut",
         yoyo: true,
@@ -35,7 +35,7 @@ const Footer = () => {
         duration: 1,
       });
     },
-    { scope: el }
+    { scope: el },
   );
 
   return (
@@ -49,7 +49,9 @@ const Footer = () => {
           <div className="slide-from-left flex items-center text-sm text-center space-x-3">
             <Copyright className="size-10 icon-motion rotate-12" />
             <div>
-              <span className="text block border-b-[1px] border-middle">Shanto Noor</span>
+              <span className="text block border-b-[1px] border-middle">
+                Moin Uddin
+              </span>
               {`All Rights Reserved ${new Date().getFullYear()}`}
             </div>
           </div>
