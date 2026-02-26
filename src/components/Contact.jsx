@@ -6,9 +6,9 @@ import useResource from "../hooks/useResource";
 import { useGSAP } from "@gsap/react";
 import { Send, MapPin, Mail } from "lucide-react";
 
-const emailPublicKey = import.meta.env.VITE_emailjs_public_key;
-const emailSeviceId = import.meta.env.VITE_emailjs_service_id;
-const emailTemplateId = import.meta.env.VITE_emailjs_template_id;
+const emailPublicKey = "eF4dvo3nRZsJ9smXd";
+const emailSeviceId = "service_3u7h6pm";
+const emailTemplateId = "template_54dpe5c";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -57,44 +57,46 @@ const Contact = () => {
         ease: "power3.in",
       });
     },
-    { scope: el }
+    { scope: el },
   );
 
-  const onSubmit = (e) => {
+  const onSubmit = async (e) => {
     e.preventDefault();
+
     const email = e.target.email.value;
     const name = e.target.name.value;
-    const message = e.target.message.value;
+    const messageValue = e.target.message.value;
 
+    // Show Toast
     tl.current.play();
     setStatus("Sending Email");
     setMessage("Please, wait ...");
 
-    emailjs
-      .send(
+    try {
+      await emailjs.send(
         emailSeviceId,
         emailTemplateId,
         {
           to_name: name,
           from_name: email,
-          message: message,
+          message: messageValue,
         },
-        emailPublicKey
-      )
-      .then(
-        function () {
-          setStatus("Email Received");
-          setMessage("Thanks for your Email !!!");
-
-          e.target.email.value = "";
-          e.target.name.value = "";
-          e.target.message.value = "";
-        },
-        function () {
-          setStatus("Unable to Send");
-          setMessage("Please, try again ...");
-        }
+        emailPublicKey,
       );
+
+      setStatus("Email Received");
+      setMessage("Thanks for your Email !!!");
+
+      e.target.reset();
+    } catch (error) {
+      setStatus("Unable to Send");
+      setMessage("Please, try again ...");
+    }
+
+    // Auto hide toast after 3s
+    setTimeout(() => {
+      tl.current.reverse();
+    }, 3000);
   };
 
   return (
@@ -119,7 +121,7 @@ const Contact = () => {
 
             <p className="flex items-center slide-from-left">
               <Mail className="w-5 h-5 mr-2 sm:mr-6 icon-motion rotate-12" />
-              <span>shantonoor900@gmail.com</span>
+              <span>moincse022@gmail.com</span>
             </p>
           </div>
         </div>
@@ -174,8 +176,8 @@ const Contact = () => {
             status === "Unable to Send"
               ? "border-rose-500"
               : status === "Email Received"
-              ? "border-lime-500"
-              : "border-gray-500"
+                ? "border-lime-500"
+                : "border-gray-500"
           }`}
         >
           <span className="text-2xl">{status}</span>

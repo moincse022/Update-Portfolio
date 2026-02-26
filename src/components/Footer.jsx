@@ -58,7 +58,7 @@ const Footer = () => {
           <div className="flex justify-center gap-4">
             <a
               rel="noopener noreferrer"
-              href="https://www.linkedin.com/in/shantonoor/"
+              href="https://www.linkedin.com/in/moin-uddin022/"
               title="Email"
               target="_blank"
               className="slide-from-right focus:ring hover:ring focus:ri hover:ri flex items-center justify-center w-10 h-10 rounded-full bg-primary text-gray-50   dark:text-gray-900"
@@ -67,7 +67,7 @@ const Footer = () => {
             </a>
             <a
               rel="noopener noreferrer"
-              href="https://www.facebook.com/ShantoN00R/"
+              href="https://www.facebook.com/moin.uddin.14203544/"
               title="Facebook"
               target="_blank"
               className="slide-from-right focus:ring hover:ring focus:ri hover:ri flex items-center justify-center w-10 h-10 rounded-full sm:w-10 sm:h-10 bg-primary text-gray-50   dark:text-gray-900"
@@ -77,7 +77,7 @@ const Footer = () => {
 
             <a
               rel="noopener noreferrer"
-              href="https://github.com/ShantoNoor"
+              href="https://github.com/moincse022"
               title="GitHub"
               target="_blank"
               className="slide-from-right focus:ring hover:ring focus:ri hover:ri flex items-center justify-center w-10 h-10 rounded-full bg-primary text-gray-50   dark:text-gray-900"

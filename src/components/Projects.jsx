@@ -61,7 +61,7 @@ const projectsList = [
         backend: "https://github.com/moincse022/Online-gas-booking-system",
       },
     },
-    imgList: [img6, img7, img8, img9, img10, img11],
+    imgList: [img7, img8, img9, img10, img11],
   },
   {
     name: "BISTRO BOSS Restaurant",
